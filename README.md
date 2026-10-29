@@ -1,1 +1,1 @@
-# api-Kento-raw-generator
+rawリンク共有

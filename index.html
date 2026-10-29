@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kento raw</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">K</span>
+          <span>Kento raw</span>
+        </div>
+        <nav class="nav">
+          <a href="/">New</a>
+          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </header>
+
+      <main class="hero">
+        <section class="panel composer">
+          <div class="panel-header">
+            <h1>Create a paste</h1>
+            <span id="status">Ready</span>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              <span>Title</span>
+              <input id="title" type="text" placeholder="untitled" />
+            </label>
+
+            <label>
+              <span>Language</span>
+              <select id="language">
+                <option value="txt">Text</option>
+                <option value="js">JavaScript</option>
+                <option value="ts">TypeScript</option>
+                <option value="json">JSON</option>
+                <option value="md">Markdown</option>
+                <option value="bash">Bash</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="textarea-label">
+            <span>Content</span>
+            <textarea id="content" placeholder="Paste your code or text here..."></textarea>
+          </label>
+
+          <div class="actions">
+            <button id="createBtn" class="primary">Create paste</button>
+            <button id="clearBtn" class="secondary">Clear</button>
+          </div>
+        </section>
+
+        <aside class="panel result" id="resultPanel">
+          <div class="panel-header">
+            <h2>Share</h2>
+          </div>
+
+          <div class="result-group">
+            <label>View URL</label>
+            <div class="url-row">
+              <input id="viewUrl" type="text" readonly />
+              <button class="copy-btn" data-copy="viewUrl">Copy</button>
+            </div>
+          </div>
+
+          <div class="result-group">
+            <label>Raw URL</label>
+            <div class="url-row">
+              <input id="rawUrl" type="text" readonly />
+              <button class="copy-btn" data-copy="rawUrl">Copy</button>
+            </div>
+          </div>
+
+          <div class="meta">
+            <a id="openView" href="#" target="_blank" rel="noreferrer">Open preview</a>
+            <a id="openRaw" href="#" target="_blank" rel="noreferrer">Open raw</a>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

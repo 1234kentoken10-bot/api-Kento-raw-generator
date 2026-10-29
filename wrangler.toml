@@ -1,0 +1,6 @@
+name = "kento-raw"
+compatibility_date = "2026-10-29"
+
+[[kv_namespaces]]
+binding = "PASTES"
+id = "YOUR_KV_NAMESPACE_ID"
